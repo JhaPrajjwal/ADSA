@@ -6,11 +6,6 @@ template<typename Key,typename Value>
 class BSTree : public BinaryTree<Key,Value>{
   private:
     int count=0;
-
-/* Inherit as many functions as possible from BinaryTree.
- * Only override those where you can decrease the time complexity and where you absolutely need to do it.
- * Also make sure that all inherited functions work correctly in the context of a binary search tree.
- */
  public:
    BSTree() { this->root=NULL; }
 
