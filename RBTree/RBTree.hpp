@@ -1,11 +1,6 @@
 #ifndef RBTree_HPP_
 #define RBTree_HPP_ 1
 #include "BSTree.hpp"
-/* The color enumeration.
- * Please use this and not integers or characters to store the color of the node
- * in your red black tree.
- * Also create a class RBTNode which should inherit from BinaryNode and has the attribute color in it.
- */
 enum Color { RED, BLACK };
 
 template<typename Key,typename Value>
@@ -79,7 +74,7 @@ class RBTree : public BSTree<Key, Value> {
 
     Key predecessor(const Key& key);
 
-		int blackHeight(RBTNode<Key,Value> *node);// not done
+		int blackHeight(RBTNode<Key,Value> *node);
 
 		void update_height(RBTNode<Key,Value>* node);
 
